@@ -1,0 +1,52 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.label {
+  color: #7b8794;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+
+.input {
+  width: 280px;
+  height: 45px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, lavender, skyblue);
+  color: black;
+}
+
+.input:hover {
+  background: linear-gradient(to right, skyblue, lavender);
+  transform: scale(1.02);
+  color: brown;
+}
+
+.image {
+  width: 100%;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .register-container {
+    flex-direction: row;
+  }
+  .image {
+    width: 80%;
+  }
+}
